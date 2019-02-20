@@ -30,6 +30,13 @@ function getDateTime() {
 app.post('/gc-test', (req, res, next) => {
     console.log(`\n${getDateTime()}:: Request Received: `)
     console.log(req.body);
+    // req.body:
+    /*
+        {
+            "query": "9767c207d0b3a7313fad22292c64ba04gd4f"
+        }
+    */
+
     const response = {
         is_available: true,
         viiBalance: 5000,
